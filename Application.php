@@ -668,8 +668,10 @@
         public function off( $event ) {
             foreach((array) $event as $eventName) {
                 $eventName = $this->eventName($eventName);
-                if(isset($this->_callbacks['events'][$eventName]))
-                    return unset($this->_callbacks['events'][$eventName]) || true;
+                if(isset($this->_callbacks['events'][$eventName])){
+                    unset($this->_callbacks['events'][$eventName]);
+                    return true;
+                }
             }
             return false;
         }
@@ -808,6 +810,6 @@
          * @param mixed $name Response handler name or index
          */
         public function removeResponseHandler($name) {
-            @unset($this->_responseHandlers[$name]);
+            unset($this->_responseHandlers[$name]);
         }
     }
