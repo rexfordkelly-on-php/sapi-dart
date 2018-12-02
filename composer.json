@@ -1,7 +1,7 @@
 {
     "name": "sapi/dart",
     "description": "Kind of like nutella, it makes simple php app development tasty.",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "Rex R Kelly",
