@@ -1,0 +1,15 @@
+{
+    "name": "sapi/dart",
+    "description": "Kind of like nutella, it makes simple php app development tasty.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Rex R Kelly",
+            "email": "rexfordkelly@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "pimple/pimple": "~3.0"
+    }
+}
